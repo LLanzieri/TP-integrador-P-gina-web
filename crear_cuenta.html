@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos_form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imgs/logo.jpg" alt="Logo de la compañia">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="titulo">
+            <h5>Formulario de registro</h5>
+        </div>
+
+        <div class="container-campos">
+            <form>
+                <!-- for y id tienen que coincidir(?) para bindearlos juntos -->
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="fname"><br>
+                    </div>
+                    <div class="campo">
+                        <label for="apellido">Apellido</label><br>
+                        <input type="text" id="apellido" name="lname">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="campo">
+                        <label for="pwd">Contraseña:</label><br>
+                        <input type="password" id="pwd" name="pwd">
+                    </div>
+                    <div class="campo">
+                        <label for="myfile">Foto de perfil:</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </div>
+                    <div class=btnRegistro>
+                        <input type="submit" value="Registrarme">
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <h1>FOOTER</h1>
+        <h1>FOOTER</h1>
+        <h1>FOOTER</h1>
+    </footer>
+
+</body>
+
+</html>

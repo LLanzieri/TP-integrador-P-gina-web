@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #0a0b44;
+
+}
+
+.logo {
+    width: 15%;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.container {
+    background-color: #cdcdcf;
+}
+
+.titulo h5 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.container-campos {
+    border: 1px solid rgb(139, 5, 5);
+    width: 85%;
+    margin: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+}
+
+legend {
+    margin: 5px;
+    font-style: italic;
+    font-weight: 10px;
+}
+
+
+.campo {
+    border: 1px solid green;
+    width: 95%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.campo label,
+.campo input {
+    margin: 5px auto;
+    width: 90%;
+}
+
+.btnRegistro input {
+    display: block;
+    margin: auto;
+
+}
+
+footer {
+    color: white;
+    background-color: #0a0b44;
+}
+
+
+
+
+
+@media (min-width: 701px) {}
+
+@media (min-width: 1200px) {}

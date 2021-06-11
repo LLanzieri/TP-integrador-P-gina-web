@@ -1,0 +1,265 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #0a0b44;
+    padding: 5px 0;
+}
+
+.cupon {
+    background-color: #ad3027;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+.cupon p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0;
+
+}
+
+.mensaje {
+    box-sizing: border-box;
+    text-align: end;
+    margin: 10px;
+    display: none;
+}
+
+.mensaje a {
+    border: 1px solid salmon;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.top-menu {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* ESCONDO EL MENU DEL MEDIO */
+.menu-desplegable-titulo {
+    display: none;
+}
+
+.hamburger {
+    background-color: #0a0b44;
+    border: 1px solid yellow;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.hamburger img {
+    width: 100%;
+}
+
+.logo {
+    border: 1px solid blueviolet;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.contenedor-der {
+    display: flex;
+    border: 1px solid greenyellow;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.inicioSesion {
+    border: 1px solid orange;
+    background-color: #0a0b44;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.inicioSesion img {
+    width: 100%;
+}
+
+.busqueda {
+    background-color: #0a0b44;
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.busqueda img {
+    width: 100%;
+}
+
+.carrito {
+    background-color: #0a0b44;
+    border: 1px solid green;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.carrito img {
+    width: 100%;
+}
+
+
+.menu-desplegable ul,
+.menu-desplegable-titulo ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desplegable ul li,
+.menu-desplegable-titulo ul li {
+    list-style: none;
+    background-color: #3b3b3b;
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+.menu-desplegable ul li a,
+.menu-desplegable-titulo ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.inicioSesion-mobile {
+    margin-top: 15px;
+}
+
+.slogan {
+
+    color: black;
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    background-color: #cdcdcf;
+
+}
+
+.slogan hr {
+    width: 90%;
+}
+
+.slogan h1 {
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+
+.newsletter {
+    background-color: brown;
+    padding: 20px;
+    background-image: url(../imgs/the-background-292720_1280.png);
+}
+
+.newsletter h2 {
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    color: black;
+    width: 50%;
+    text-decoration: underline;
+}
+
+.newsletter input{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    background-color: #0A0B44;
+    
+}
+
+footer h1 {
+    margin: 0;
+    color: white;
+}
+
+
+@media (min-width: 701px) {
+
+    /*     ESCONDO ELEMENTOS
+ */
+    .hamburger,
+    .inicioSesion,
+    .menu-desplegable {
+        display: none;
+    }
+
+    /*     MUESTRO ELEMENTOS
+ */
+    .mensaje,
+    .menu-desplegable-titulo {
+        display: block;
+    }
+
+    .mensaje a {
+        font-size: 20px;
+    }
+
+    .top-menu {
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .menu-desplegable-titulo {
+        border: 1px solid yellow;
+        /* width: 600px; */
+        width: 70%;
+    }
+
+    .menu-desplegable-titulo ul {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: 5% 0;
+        border: 1px solid red;
+    }
+
+    .menu-desplegable-titulo ul li {
+        border: 1px solid turquoise;
+        display: block;
+        margin: auto;
+    }
+
+    .menu-desplegable-titulo ul li a {
+        font-size: 15px;
+    }
+
+    .contenedor-der {
+        width: 100px;
+    }
+
+    .busqueda,
+    .carrito {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {}
