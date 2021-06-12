@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
     border: 1px solid red;
     margin: auto;
 }
@@ -25,7 +26,7 @@ header {
 
 .titulo h5 {
     margin: 0;
-    padding: 10px;
+    padding: 25px;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
@@ -40,32 +41,41 @@ header {
 
 fieldset {
     border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }
-
-legend {
-    margin: 5px;
-    font-style: italic;
-    font-weight: 10px;
-}
-
 
 .campo {
     border: 1px solid green;
     width: 95%;
-    margin: 10px;
+    margin: 15px auto;
     box-sizing: border-box;
 }
 
 .campo label,
 .campo input {
-    margin: 5px auto;
+    margin: 5px 5%;
     width: 90%;
+    font-size: 25px;
 }
 
 .btnRegistro input {
     display: block;
-    margin: auto;
+    margin: 20px auto;
+    font-size: 20px;
 
+}
+
+.recomendacionCuenta{
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+
+.recomendacionCuenta p{
+    display: inline-block;
+   
 }
 
 footer {
@@ -74,9 +84,23 @@ footer {
 }
 
 
+@media (min-width: 701px) {
 
+    body{
+        font-size: 30px;
+    }
 
+    .logo{
+        max-width: 120px;
+    }
 
-@media (min-width: 701px) {}
+    .campo label,
+    .campo input{
+        font-size: 30px;
+    }
 
-@media (min-width: 1200px) {}
+    .recomendacionCuenta{
+        font-size: 25px;
+    }
+ 
+}

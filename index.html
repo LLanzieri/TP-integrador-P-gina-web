@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos_index.css">
-    <title>A ver si anda</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./imgs/tshirt.png">
+    <title>Home - ARG CLOTHES</title>
 </head>
 
 <body>
@@ -58,8 +60,8 @@
 
         <div class="menu-desplegable">
             <ul>
-                <li> <a href="#">Iniciar Sesión</a> </li>
-                <li> <a href="#">Crear Cuenta</a> </li>
+                <li> <a href="iniciar_sesion.html">Iniciar Sesión</a> </li>
+                <li> <a href="crear_cuenta.html">Crear Cuenta</a> </li>
                 <li> <a href="#">Publicar</a> </li>
                 <li> <a href="#">Contactanos</a> </li>
             </ul>
@@ -72,8 +74,29 @@
         <hr>
         <h1>¡Envíos a todo el país!</h1>
     </div>
-    <div class="carrousel">
-        <h1>ACA VA EL CARROUSEL</h1>
+
+    <!-- CAROUSEL / SLIDESHOW -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imgs/wall1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imgs/wall3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imgs/wall4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div class="categorias">
@@ -81,8 +104,8 @@
     </div>
 
     <div class="newsletter">
-            <h2>SUSCRIBITE A NUESTRO NEWSLETTER</h2>
-            <input type="email" id="email" name="email" placeholder="¡ Ingresa tu email ✉ !">
+        <h2>SUSCRIBITE A NUESTRO NEWSLETTER</h2>
+        <input type="email" id="email" name="email" placeholder="¡ Ingresa tu email ✉ !">
     </div>
 
     <footer>
@@ -90,6 +113,8 @@
         <h1>FOOTER</h1>
         <h1>FOOTER</h1>
     </footer>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
