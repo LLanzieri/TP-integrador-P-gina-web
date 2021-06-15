@@ -6,6 +6,7 @@ body {
 header {
     background-color: #0a0b44;
     padding: 5px 0;
+    flex-wrap: wrap;
 }
 
 .cupon {
@@ -27,7 +28,7 @@ header {
 .mensaje {
     box-sizing: border-box;
     text-align: end;
-    margin: 10px;
+    margin: 5px;
     display: none;
 }
 
@@ -45,17 +46,19 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px;
+    align-items: flex-start;
+    align-items: center;
 }
 
 /* ESCONDO EL MENU DEL MEDIO */
-.menu-desplegable-titulo {
+.barraBusqueda {
     display: none;
 }
 
 .hamburger {
     background-color: #0a0b44;
     border: 1px solid yellow;
-    width: 20%;
+    width: 15%;
     box-sizing: border-box;
 }
 
@@ -77,7 +80,7 @@ header {
 .contenedor-der {
     display: flex;
     border: 1px solid greenyellow;
-    width: 150px;
+    width: 130px;
     justify-content: space-between;
 }
 
@@ -124,7 +127,7 @@ header {
 .menu-desplegable ul li,
 .menu-desplegable-titulo ul li {
     list-style: none;
-    background-color: #3b3b3b;
+    background-color: #585858;
     margin: 5px;
     padding: 10px 10px;
 }
@@ -132,12 +135,26 @@ header {
 .menu-desplegable ul li a,
 .menu-desplegable-titulo ul li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .inicioSesion-mobile {
     margin-top: 15px;
+}
+
+.btn-whatsapp {
+    display:block;
+    width:5%;
+    height:12%;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
 }
 
 .slogan {
@@ -147,12 +164,11 @@ header {
     font-style: italic;
     width: 100%;
     background-color: #cdcdcf;
-
 }
 
 .slogan hr {
     width: 90%;
-    margin: auto;
+    margin: 2px auto;
 }
 
 .slogan h1 {
@@ -175,6 +191,7 @@ header {
     color: black;
     width: 50%;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .newsletter input{
@@ -187,13 +204,52 @@ header {
 
 footer {
     background-color: #0A0B44;
-    
+       
 }
 
-footer h1 {
-    margin: 0;
+.titulo-footer{
     color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 0px;
 }
+
+.cuerpo-footer p{
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.redes-sociales{
+     width: 100%;
+     display: flex;
+     border: 1px solid pink;
+     justify-content: center;
+}
+
+.redes-sociales button{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    margin: 0px 15px;
+}
+
+.redes-sociales button img{
+    width: 100%;
+}
+
+.mapa iframe{
+    display: block;
+    margin: 0px auto;
+}
+
+.fin-footer{
+    color: white;
+    padding: 5px;
+}
+
 
 
 @media (min-width: 701px) {
@@ -201,7 +257,8 @@ footer h1 {
     /*     ESCONDO ELEMENTOS
  */
     .hamburger,
-    .inicioSesion,
+    .busqueda,
+    .vista-mobile,
     .menu-desplegable {
         display: none;
     }
@@ -209,12 +266,18 @@ footer h1 {
     /*     MUESTRO ELEMENTOS
  */
     .mensaje,
-    .menu-desplegable-titulo {
+    .barraBusqueda,
+    .menu-desplegable {
         display: block;
     }
 
-    .mensaje a {
-        font-size: 20px;
+    .barraBusqueda{
+        width: 60%;
+    }
+
+    .barraBusqueda input{
+
+        width: 100%;
     }
 
     .top-menu {
@@ -229,38 +292,44 @@ footer h1 {
         width: 100%;
     }
 
-    .menu-desplegable-titulo {
-        border: 1px solid yellow;
-        /* width: 600px; */
-        width: 70%;
-    }
-
-    .menu-desplegable-titulo ul {
-        display: flex;
-        align-items: stretch;
-        flex-wrap: wrap;
-        margin: 5% 0;
-        border: 1px solid red;
-    }
-
-    .menu-desplegable-titulo ul li {
-        border: 1px solid turquoise;
-        display: block;
-        margin: auto;
-    }
-
-    .menu-desplegable-titulo ul li a {
-        font-size: 15px;
-    }
-
     .contenedor-der {
         width: 100px;
     }
 
-    .busqueda,
+    .inicioSesion,
     .carrito {
-        width: 50%;
+        width: 40%;
     }
+
+    .btn-whatsapp{
+        width: 2%;
+    }
+
+    .menu-desplegable{
+    display: flex;
+    }
+
+     .menu-desplegable ul{
+        display: flex;
+        margin: auto;
+    } 
+
+    .container-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .caja-footer{
+        width: 33%;
+        border: 1px solid yellow;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
+    
 }
 
 @media (min-width: 1200px) {}

@@ -20,8 +20,10 @@ header {
 
 }
 
-.container {
+.container-fondo {
     background-color: #cdcdcf;
+    background-image: url(../imgs/wallForm.jpg);
+    background-attachment: fixed;
 }
 
 .titulo h5 {
@@ -31,7 +33,6 @@ header {
     text-decoration: underline;
     font-weight: bold;
 }
-
 
 .container-campos {
     border: 1px solid rgb(139, 5, 5);
@@ -47,16 +48,17 @@ fieldset {
 
 .campo {
     border: 1px solid green;
-    width: 95%;
+    width: 60%;
     margin: 15px auto;
     box-sizing: border-box;
 }
 
 .campo label,
-.campo input {
+.campo input,
+.campo textarea {
     margin: 5px 5%;
     width: 90%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .btnRegistro input {
@@ -72,15 +74,57 @@ fieldset {
     font-size: 20px;
 }
 
-
 .recomendacionCuenta p{
     display: inline-block;
+    font-style: italic;
    
 }
 
 footer {
-    color: white;
     background-color: #0a0b44;
+}
+
+.titulo-footer{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.cuerpo-footer{
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.redes-sociales{
+     width: 100%;
+     display: flex;
+     border: 1px solid pink;
+     justify-content: center;
+}
+
+.redes-sociales button{
+    background-color: transparent;
+    border: none;
+    width: 15%;
+    margin: 0px 15px;
+}
+
+.redes-sociales button img{
+    width: 100%;
+}
+
+.mapa iframe{
+    display: block;
+    margin: 0px auto;
+}
+
+.fin-footer{
+    color: white;
+    padding: 5px;
 }
 
 
@@ -96,11 +140,26 @@ footer {
 
     .campo label,
     .campo input{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .recomendacionCuenta{
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .container-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .caja-footer{
+        width: 33%;
+        border: 1px solid yellow;
+    }
+
+    .mapa iframe{
+        width: 100%;
     }
  
 }

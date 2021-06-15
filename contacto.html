@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="./css/estilos_form.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./imgs/tshirt.png">
-    <title>Iniciar Sesión - ARG CLOTHES</title>
+    <title>Contacto - ARG CLOTHES</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -17,36 +19,35 @@
     </header>
     <div class="container-fondo">
         <div class="titulo">
-            <h5>Iniciar Sesión</h5>
+            <h5>¿Tienes alguna pregunta? ¡Envíala en el siguiente espacio y le contestaremos a la brevedad!</h5>
         </div>
 
         <div class="container-campos">
             <form>
                 <!-- for y id tienen que coincidir(?) para bindearlos juntos -->
 
-                <fieldset>                  
+                <fieldset>
+                    <div class="campo">
+                        <label for="nya">Nombre y apellido</label><br>
+                        <input type="text" id="nya" name="nya"><br>
+                    </div>
                     <div class="campo">
                         <label for="email">Email</label><br>
                         <input type="email" id="email" name="email">
                     </div>
                     <div class="campo">
-                        <label for="pwd">Contraseña</label><br>
-                        <input type="password" id="pwd" name="pwd">
+                        <label for="subject">Asunto</label>
+                        <textarea id="subject" name="subject" placeholder="Escriba aquí su mensaje"></textarea>
                     </div>
-                    
-                    <div class=btnRegistro>
-                        <input type="submit" value="Continuar">
+                    <div class="btnRegistro">
+                        <input type="submit" value="Enviar">
                     </div>
-                    
+
                 </fieldset>
             </form>
             <div class="recomendacionCuenta">
-                <p>¿No tienes una cuenta?</p>
-                <a href="./crear_cuenta.html">Crear mi cuenta</a>
-            </div>
-            <div class="recomendacionCuenta">
-                <p>¿No recuerdas tu contraseña?</p>
-                <a href="#">Click aquí</a>
+
+                <a href="./index.html">Volver a la página principal</a>
             </div>
 
         </div>
@@ -99,7 +100,7 @@
             </div>
             <div class="caja-footer">
                 <div class="titulo-footer">
-                    <p>Nuestra información</p> 
+                    <p>Nuestra información</p>
                 </div>
                 <div class="cuerpo-footer">
                     <p>
@@ -108,7 +109,7 @@
                         ⏱ Lunes a Viernes - 9hs a 18hs. <br>
                         💸 Aceptamos todos los medios de pago. <br>
                         📦 ¡Realizamos envíos a todas las provincias!
-                        </p>
+                    </p>
                 </div>
             </div>
 
@@ -121,4 +122,5 @@
 
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
