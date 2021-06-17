@@ -22,7 +22,7 @@ header {
 
 .container-fondo {
     background-color: #cdcdcf;
-    background-image: url(../imgs/wallForm.jpg);
+    background-image: url(../imgs/wallForm.png);
     background-attachment: fixed;
 }
 
@@ -61,6 +61,10 @@ fieldset {
     font-size: 20px;
 }
 
+.campo textarea{
+    height: 250px;
+}
+
 .btnRegistro input {
     display: block;
     margin: 20px auto;
@@ -70,7 +74,7 @@ fieldset {
 
 .recomendacionCuenta{
     text-align: center;
-    margin: 5px;
+    padding: 1%;
     font-size: 20px;
 }
 
@@ -84,6 +88,11 @@ footer {
     background-color: #0a0b44;
 }
 
+.caja-footer{
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-footer{
     color: white;
     text-align: center;
@@ -93,9 +102,9 @@ footer {
     padding: 10px 0px;
 }
 
-.cuerpo-footer{
+.cuerpo-footer p{
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
 }
 
@@ -109,12 +118,16 @@ footer {
 .redes-sociales button{
     background-color: transparent;
     border: none;
-    width: 15%;
+    width: 10%;
     margin: 0px 15px;
 }
 
 .redes-sociales button img{
     width: 100%;
+}
+
+.alFinal{
+    margin: auto;
 }
 
 .mapa iframe{
@@ -132,6 +145,10 @@ footer {
 
     body{
         font-size: 30px;
+    }
+
+    .mensaje a, .titulo-footer, .cuerpo-footer p{
+        font-size: 20px;
     }
 
     .logo{

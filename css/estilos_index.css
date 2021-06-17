@@ -22,7 +22,6 @@ header {
     font-style: italic;
     font-weight: bold;
     margin: 0 0;
-
 }
 
 .mensaje {
@@ -41,7 +40,6 @@ header {
 }
 
 .top-menu {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -51,6 +49,7 @@ header {
 }
 
 /* ESCONDO EL MENU DEL MEDIO */
+
 .barraBusqueda {
     display: none;
 }
@@ -117,26 +116,34 @@ header {
     width: 100%;
 }
 
-
-.menu-desplegable ul,
-.menu-desplegable-titulo ul {
+.menu-desplegable ul, .menu-desplegable-titulo ul {
     margin: 0;
     padding: 0;
 }
 
-.menu-desplegable ul li,
-.menu-desplegable-titulo ul li {
+.menu-desplegable ul li, .menu-desplegable-titulo ul li {
     list-style: none;
-    background-color: #585858;
+    background-color: black;
     margin: 5px;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 
-.menu-desplegable ul li a,
-.menu-desplegable-titulo ul li a {
+.menu-desplegable ul li a, .menu-desplegable-titulo ul li a {
     text-decoration: none;
     font-size: 20px;
     color: white;
+}
+
+.subMenu ul li {
+    background-color: #585858
+}
+
+.subMenu ul li a {
+    margin: 3%;
+}
+
+.subMenuSecundario ul li a {
+    margin: 15%;
 }
 
 .inicioSesion-mobile {
@@ -144,21 +151,20 @@ header {
 }
 
 .btn-whatsapp {
-    display:block;
-    width:5%;
-    height:12%;
-    color:#fff;
+    display: block;
+    width: 5%;
+    height: 12%;
+    color: #fff;
     position: fixed;
-    right:20px;
-    bottom:20px;
-    border-radius:50%;
-    line-height:80px;
-    text-align:center;
-    z-index:999;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
 }
 
 .slogan {
-
     color: black;
     text-align: center;
     font-style: italic;
@@ -175,6 +181,86 @@ header {
     margin: 0;
     padding: 20px;
     color: black;
+}
+
+.banner {
+    background-color: #ff4a4f;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.banner p {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.banner button {
+    margin: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+}
+
+.banner button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container-productos {
+    padding: 15px;
+    background-color: #cdcdcf;
+    text-align: center;
+}
+
+.container-productos h1 {
+    color: black;
+    padding: 15px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 30%;
+    margin: 10px auto;
+    padding: 3%;
+    border: 2px solid #0A0B44;
+}
+
+.producto img {
+    width: 100%;
+}
+
+
+.producto p {
+    font-size: 20px;
+    width: 100%;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.container-productos button {
+    margin: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+}
+
+.container-productos button:hover {
+    background-color: black;
+    color: white;
 }
 
 .newsletter {
@@ -194,7 +280,7 @@ header {
     font-size: 20px;
 }
 
-.newsletter input{
+.newsletter input {
     display: block;
     margin: auto;
     padding: 10px;
@@ -204,10 +290,14 @@ header {
 
 footer {
     background-color: #0A0B44;
-       
 }
 
-.titulo-footer{
+.caja-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-footer {
     color: white;
     text-align: center;
     text-decoration: underline;
@@ -216,120 +306,112 @@ footer {
     padding: 10px 0px;
 }
 
-.cuerpo-footer p{
+.cuerpo-footer p {
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
 }
 
-.redes-sociales{
-     width: 100%;
-     display: flex;
-     border: 1px solid pink;
-     justify-content: center;
+.redes-sociales {
+    width: 100%;
+    display: flex;
+    border: 1px solid pink;
+    justify-content: center;
 }
 
-.redes-sociales button{
+.redes-sociales button {
     background-color: transparent;
     border: none;
     width: 10%;
     margin: 0px 15px;
 }
 
-.redes-sociales button img{
+.redes-sociales button img {
     width: 100%;
 }
 
-.mapa iframe{
+.alFinal {
+    margin: auto;
+}
+
+.mapa iframe {
     display: block;
     margin: 0px auto;
 }
 
-.fin-footer{
+.fin-footer {
     color: white;
     padding: 5px;
 }
 
-
-
-@media (min-width: 701px) {
-
+@media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
  */
-    .hamburger,
-    .busqueda,
-    .vista-mobile,
-    .menu-desplegable {
+    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .subMenu {
         display: none;
     }
-
     /*     MUESTRO ELEMENTOS
  */
-    .mensaje,
-    .barraBusqueda,
-    .menu-desplegable {
+    .mensaje, .barraBusqueda, .menu-desplegable {
         display: block;
     }
-
-    .barraBusqueda{
+    .mensaje a, .titulo-footer, .cuerpo-footer p {
+        font-size: 20px;
+    }
+    .barraBusqueda {
         width: 60%;
     }
-
-    .barraBusqueda input{
-
+    .barraBusqueda input {
         width: 100%;
     }
-
     .top-menu {
         justify-content: space-around;
     }
-
     .logo {
         width: 15%;
     }
-
     .logo img {
         width: 100%;
     }
-
     .contenedor-der {
         width: 100px;
     }
-
-    .inicioSesion,
-    .carrito {
+    .inicioSesion, .carrito {
         width: 40%;
     }
-
-    .btn-whatsapp{
+    .btn-whatsapp {
         width: 2%;
     }
-
-    .menu-desplegable{
-    display: flex;
+    .menu-desplegable {
+        display: flex;
     }
-
-     .menu-desplegable ul{
+    .menu-desplegable ul {
         display: flex;
         margin: auto;
-    } 
-
-    .container-footer{
+    }
+    .menu-desplegable ul li, .menu-desplegable-titulo ul li {
+        padding: 5px 5px;
+    }
+    .producto {
+        padding: 1%;
+        width: 14%;
+        margin: 10px;
+    }
+    container-productos button {
+        padding: 1%;
+    }
+    .container-footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
-    .caja-footer{
+    .caja-footer {
         width: 33%;
         border: 1px solid yellow;
     }
-
-    .mapa iframe{
+    .mapa iframe {
         width: 100%;
     }
-
-    
 }
 
 @media (min-width: 1200px) {}
