@@ -226,7 +226,7 @@ header {
 }
 
 .productos {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -239,7 +239,7 @@ header {
 }
 
 .producto img {
-    width: 100%;
+    width: 100% !important;
 }
 
 
@@ -252,14 +252,14 @@ header {
 
 .container-productos button {
     margin: 15px;
-    background-color: white;
+    background-color: #cdcdcf;
     color: black;
     border: none;
     padding: 10px;
 }
 
 .container-productos button:hover {
-    background-color: black;
+    background-color: #0A0B44;
     color: white;
 }
 
