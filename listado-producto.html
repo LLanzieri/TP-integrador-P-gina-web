@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos_index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./imgs/tshirt.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Listado de productos - ARG DESIGN</title>
+</head>
+
+<body>
+    <!-- CUPON -->
+
+    <div class="cupon">
+        <p>ACA VA UN ANUNCIO COMO PARA UN DESCUENTO O ALGUN AVISO</p>
+    </div>
+
+    <!-- COMIENZO CABECERA -->
+
+    <header>
+        <div class="contenedor-principal-header">
+
+            <div class="mensaje">
+                <a href="#">Ayuda</a>
+                <a href="crear_cuenta.html">Crear cuenta</a>
+                <a href="iniciar_sesion.html">Iniciar Sesión</a>
+            </div>
+            <div class="top-menu">
+                <button class="hamburger">
+                    <img src="./imgs/hamb2.png" alt="hamburger icon">
+                </button>
+                <div class="logo">
+                    <a href="index.html"><img src="./imgs/logo11.png" alt="Logo de la compañia"></a>
+
+                </div>
+
+                <!--       BARRA BUSQUEDA A MOSTRAR EN VISTA MAYOR A 800PX  -->
+
+                <div class="barraBusqueda">
+                    <input type="text" id="barraBusqueda" name="barraBusqueda" placeholder=" 🔍 ¿Qué estás buscando?">
+                </div>
+
+                <div class="contenedor-der">
+                    <button class="inicioSesion">
+                        <img src="./imgs/user2.png" alt="Iniciar Sesión icon">
+                    </button>
+                    <button class="busqueda">
+                        <img src="./imgs/search-3-256.png" alt="busqueda">
+                    </button>
+                    <button class="carrito">
+                        <img src="./imgs/carrito.png" alt="carrito">
+                    </button>
+                </div>
+            </div>
+
+            <!--   MENU DESPLEGABLE  -->
+
+            <div class="menu-desplegable">
+                <ul>
+                    <div class="vista-mobile">
+                        <li> <a href="iniciar_sesion.html">Iniciar Sesión</a> </li>
+                        <li> <a href="crear_cuenta.html">Crear Cuenta</a> </li>
+                    </div>
+                    <li> <a href="publicar.html">Publicar</a> </li>
+                    <li> <a href="#">Categorías +</a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Mujer ➠</a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#">Indumentaria</a></li>
+                                    <li><a href="#">Calzado</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#">Hombre ➠</a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#">Indumentaria</a></li>
+                                    <li><a href="#">Calzado</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#">Niños ➠</a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#">Indumentaria</a></li>
+                                    <li><a href="#">Calzado</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#">Sin género ➠</a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#">Indumentaria</a></li>
+                                    <li><a href="#">Calzado</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#">Ver todo</a></li>
+                        </ul>
+                    </div>
+                    <li> <a href="#">Deporte +</a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Fútbol</a></li>
+                            <li><a href="#">Tenis</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Ver todo</a></li>
+                        </ul>
+                    </div>
+                    <li> <a href="#">Marcas +</a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Adidas</a></li>
+                            <li><a href="#">Reebok</a></li>
+                            <li><a href="#">Ver todo</a></li>
+                        </ul>
+                    </div>
+                    <li> <a href="#">Accesorios</a> </li>
+                    <li> <a href="#">Ofertas</a> </li>
+                    <li> <a href="contacto.html">Contactanos</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- LISTA DE PRODUCTOS -->
+
+    <div class="wrap-container">
+        <h1>Escoge un producto</h1>
+        <div class="store-wrapper">
+            <div class="category-list">
+                <a class="category-rama" href="">Todo</a>
+                <hr>
+                <div class="cat">
+                    <h5>Mujer</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Mujer </a> -->
+                        <a href="" class="category-items">Indumentaria</a>
+                        <a href="" class="category-items">Calzado</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+
+                    </div>
+                </div>
+
+                <hr>
+                <div class="cat">
+                    <h5>Hombre</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Hombre </a> -->
+                        <a href="" class="category-items">Indumentaria</a>
+                        <a href="" class="category-items">Calzado</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="cat">
+                    <h5>Niños</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Niños </a> -->
+                        <a href="" class="category-items">Indumentaria</a>
+                        <a href="" class="category-items">Calzado</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="cat">
+                    <h5>Sin Género</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Sin genero </a> -->
+                        <a href="" class="category-items">Indumentaria</a>
+                        <a href="" class="category-items">Calzado</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+                        <a href="" class="category-items">Accesorios</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="cat">
+                    <h5>Deporte</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Deporte</a> -->
+                        <a href="" class="category-items">Fútbol</a>
+                        <a href="" class="category-items">Basquet</a>
+                        <a href="" class="category-items">Tenis</a>
+                        <a href="" class="category-items">Natación</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="cat">
+                    <h5>Marcas</h5>
+                    <div class="scroll">
+                        <!-- <a class="category-rama" href="">Marcas</a> -->
+                        <a href="" class="category-items">Nike</a>
+                        <a href="" class="category-items">Adidas</a>
+                        <a href="" class="category-items">Reebok</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="products-list">
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+                <div class="products-items">
+                    <img src="imgs/zapa-1.jpg" alt="">
+                    <a href="/producto-detalle.html">Zapatillas Puma Comet ll Alt Beta ADP <br>
+                        <p>$6999</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+        <h2>SUSCRIBITE A NUESTRO NEWSLETTER</h2>
+        <input type="email" id="email" name="email" placeholder="¡ Ingresa tu email ✉ !">
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container-footer">
+            <div class="caja-footer">
+                <div class="titulo-footer">
+                    <p>Acerca de nosotros</p>
+                </div>
+                <div class="cuerpo-footer">
+                    <p>Nuestros negocios comercializan los mejores productos del mercado, pero ¡NO SOMOS EGOÍSTAS! , te
+                        damos
+                        la posibilidad de publicar en nuestra página y que vendas lo que quieras con mayor
+                        facilidad.
+                    </p>
+                </div>
+                <div class="alFinal">
+                    <div class="titulo-footer">
+                        <p>¡Seguinos en nuestras redes!</p>
+                    </div>
+                    <div class="redes-sociales">
+                        <button>
+                            <img src="./imgs/ig icon.png" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/tw icon.png" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/fb icon (1).png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <div class="titulo-footer">
+                    <p>Sucursal principal</p>
+                </div>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.46612707806!2d-58.54947558561413!3d-34.465697680495396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1218b6e5a19%3A0x9fa22d241c427dc5!2sLa%20Pichula%20Fl%C3%A1cida!5e0!3m2!1ses-419!2sar!4v1623719561356!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="cuerpo-footer">
+                    <p>
+                        🏢 Calle Falsa 123 - Ciudad Autónoma de Buenos Aires. <br>
+                        🚌 Líneas que te acercan: 60-63-92-103-113-298. <br>
+                        🚈 Subte Línea A - Línea B - Tren Roca - Tren Belgrano Sur.
+                    </p>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <div class="titulo-footer">
+                    <p>Nuestra información</p>
+                </div>
+                <div class="cuerpo-footer">
+                    <p>
+                        📞 1122334455 <br>
+                        📧 arg_design@gmail.com <br>
+                        ⏱ Lunes a Viernes - 9hs a 18hs. <br>
+                        💸 Aceptamos todos los medios de pago. <br>
+                        📦 ¡Realizamos envíos a todo el país!
+                    </p>
+                </div>
+            </div>
+
+            <div class="fin-footer">
+                <p>Copyright © Trabajo práctico integrador 2021.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5199999999" target="_blank">
+            <img src="./imgs/whatsapp.png" alt="Logo boton whatsapp">
+        </a>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

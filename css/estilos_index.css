@@ -353,9 +353,9 @@ header {
     border: 1px solid black;
 }
 
-.container-productos button:hover {
-    background-color: black;
-    color: white;
+.container-productos button a {
+    text-decoration: none;
+    color: black;
 }
 
 /* NEWSLETTER */
@@ -444,12 +444,12 @@ footer {
     color: white;
     padding: 5px;
 }
-/*LISTA DE PRODUCTOS */
+
+/*LISTADO-PRODUCTOS.html */
 
 .wrap-container {
     width: 100%;
     margin: auto;
-    
 }
 
 .wrap-container h1 {
@@ -462,21 +462,25 @@ footer {
 }
 
 .wrap-container h1::after {
-    content:'';
+    content: '';
     width: 100%;
     height: 1px;
     background: grey;
     margin: 20px 0px;
 }
 
-
 .category-list {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color:#0A0B44;
+    background-color: white;
     padding: 5px 10px;
     color: #f9f9f9;
+}
+
+.category-list h5{
+    color: black;
+    text-decoration: underline;
 }
 
 .category-list .category-items {
@@ -486,17 +490,26 @@ footer {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
+}
+
+.cat{
+    margin: 1% 10%;
 }
 
 .scroll {
-    overflow-y: scroll;
+    height: 100px;
+    overflow: scroll;
+   /*  border: 1px solid red; */
+   width: 80%;
+  
 }
 
 .category-rama {
     font-size: 25px;
     text-decoration: none;
-    color: white;
+    color: black;
+    
 }
 
 .products-list {
@@ -506,83 +519,107 @@ footer {
 .products-list img {
     width: 85%;
     display: block;
-    margin: auto;    
+    margin: auto;
 }
 
-.products-items a{
+.products-items a {
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
 
+/* ESTILOS DE producto-detalle */
 
-
-
-
-/* ESTILO DE producto-detalle */
-
-.contenedor-detalle
-{
+.contenedor-detalle {
     padding: 10px;
 }
 
-.variedad-talles
-{
-display: flex;
-justify-content:start;
-padding: 10px;
-flex-wrap: wrap;
+.titulo-detalle {
+    margin: 5px;
 }
-.variedad-talles li
-{
-list-style: none;
-margin: 5px;
+
+.talle-container h3 {
+    margin: 5px;
 }
-.tabla-talles
-{
-    text-decoration-line: underline;
+
+.variedad-talles {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 5px;
 }
-.tabla-talles a
-{
-    border: transparent !important;
+
+.variedad-talles li {
+    list-style: none;
+    margin: 10px;
 }
-.variedad-talles a
-{
+
+.container-tablaTalles a {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 15px;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+.btn-tablaTalles {
+    background-color: rgb(13, 122, 231);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: block;
+    margin: 0px auto;
+}
+
+.variedad-talles a {
     text-decoration: none;
     padding: 5px;
     margin: 5px;
     border: solid 1px;
     border-radius: 50px;
     color: #000;
-
 }
-.t-sin-stock{
+
+.btnComprar {
+    text-align: center;
+    margin: 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.t-sin-stock {
     color: rgb(199, 195, 195) !important;
     border: solid 1px rgb(199, 195, 195) !important;
     border-radius: 50px !important;
-
 }
 
-.btn-cart-fav
-{
+.btn-cart-fav {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-.comprar-container
-{
+
+.comprar-container {
     padding: 5px;
 }
 
-.add-to-cart
-{
+.add-to-cart {
     width: 100%;
     height: 50px;
-    
 }
-.fav-container
-{
+
+.fav-container {
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
@@ -590,15 +627,14 @@ margin: 5px;
     height: 50px;
     width: 50px;
 }
-.descripcion
-{
+
+.descripcion {
     padding: 10px;
 }
-.descripcion h2
-{
+
+.descripcion h2 {
     padding: 20px 0px;
 }
-
 
 @media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
@@ -607,30 +643,23 @@ margin: 5px;
         display: none;
     }
     /*     MUESTRO ELEMENTOS  */
-    
-    
     .wrap-container {
         width: 90%;
         margin: auto;
-        
     }
-
     .store-wrapper {
         display: flex;
         flex-direction: grow;
     }
-    
     .category-list {
         display: flex;
         flex-direction: column;
         width: 18%;
-        background-color: white; 
+        background-color: white;
     }
-    
     .category-list .category-items {
         color: black;
     }
-    
     hr {
         margin: 1rem 0;
         color: black !important;
@@ -638,38 +667,23 @@ margin: 5px;
         border: 0;
         opacity: .25;
     }
-    
-    
-    
     .category-rama {
         color: black;
     }
-    
-    
-    
     .products-list {
         width: 82%;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 5%;
     }
-
     .products-list .products-items {
         width: 22%;
-        background:white;
+        background: white;
         margin-left: 3%;
-        
     }
-    
     .products-list .products-items img {
         width: 100%;
     }
-    
-    
-    
-    
-    
-    
     .mensaje, .barraBusqueda, .menu-desplegable {
         display: block;
     }
@@ -721,11 +735,9 @@ margin: 5px;
         width: 14%;
         margin: 10px;
     }
-
     .producto p {
-        font-size: 15px;  
+        font-size: 15px;
     }
-
     container-productos button {
         padding: 1%;
     }
@@ -747,18 +759,14 @@ margin: 5px;
     .cuerpo-footer p {
         font-size: 15px;
     }
-    .contenedor-principal-detalle, .contenedor-principal-footer, .contenedor-principal-header
-    {
-    max-width: 1200px;
-    margin: auto;
+    .contenedor-principal-detalle, .contenedor-principal-footer, .contenedor-principal-header {
+        max-width: 1200px;
+        margin: auto;
     }
-    .main-container
-    {
-    display: flex;
+    .main-container {
+        display: flex;
     }
-    .caja-carusel, .contenedor-detalle
-    {
+    .caja-carusel, .contenedor-detalle {
         width: 50%;
     }
-
 }
