@@ -444,6 +444,80 @@ footer {
     color: white;
     padding: 5px;
 }
+/*LISTA DE PRODUCTOS */
+
+.wrap-container {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.wrap-container h1 {
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.wrap-container h1::after {
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: grey;
+    margin: 20px 0px;
+}
+
+
+.category-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#0A0B44;
+    padding: 5px 10px;
+    color: #f9f9f9;
+}
+
+.category-list .category-items {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.category-rama {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.products-list {
+    text-align: center;
+}
+
+.products-list img {
+    width: 85%;
+    display: block;
+    margin: auto;    
+}
+
+.products-items a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
 
 /* ESTILO DE producto-detalle */
 
@@ -532,8 +606,70 @@ margin: 5px;
     .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .subMenu, .tarjetasMobile {
         display: none;
     }
-    /*     MUESTRO ELEMENTOS
- */
+    /*     MUESTRO ELEMENTOS  */
+    
+    
+    .wrap-container {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .store-wrapper {
+        display: flex;
+        flex-direction: grow;
+    }
+    
+    .category-list {
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        background-color: white; 
+    }
+    
+    .category-list .category-items {
+        color: black;
+    }
+    
+    hr {
+        margin: 1rem 0;
+        color: black !important;
+        background-color: currentColor;
+        border: 0;
+        opacity: .25;
+    }
+    
+    
+    
+    .category-rama {
+        color: black;
+    }
+    
+    
+    
+    .products-list {
+        width: 82%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+
+    .products-list .products-items {
+        width: 22%;
+        background:white;
+        margin-left: 3%;
+        
+    }
+    
+    .products-list .products-items img {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
     .mensaje, .barraBusqueda, .menu-desplegable {
         display: block;
     }
