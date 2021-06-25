@@ -115,24 +115,29 @@ header {
 .carrito img {
     width: 100%;
 }
+.menu-desplegable-1
+{
+    display: none;
+}
 
-.menu-desplegable ul, .menu-desplegable-titulo ul {
+.menu-desplegable ul, .menu-desplegable-1 ul, .menu-desplegable-titulo ul {
     margin: 0;
     padding: 0;
 }
 
-.menu-desplegable ul li, .menu-desplegable-titulo ul li {
+.menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
     list-style: none;
     background-color: black;
     margin: 5px;
     padding: 5px 10px;
 }
 
-.menu-desplegable ul li a, .menu-desplegable-titulo ul li a {
+.menu-desplegable ul li a, .menu-desplegable-titulo ul li a, .menu-desplegable-1 ul li a{
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
+
 
 .subMenu ul li {
     background-color: #585858
@@ -547,7 +552,6 @@ footer {
     justify-content: start;
     padding: 10px;
     flex-wrap: wrap;
-    border: 1px solid black;
     margin: 5px;
 }
 
@@ -564,8 +568,17 @@ footer {
     margin: 10px auto;
     text-decoration: none;
 }
+.tabla-talles
+{
+    text-decoration-line: underline;
+}
+.tabla-talles a
+{
+    border: transparent !important;
+}
 
-.btn-tablaTalles {
+
+/* .btn-tablaTalles {
     background-color: rgb(13, 122, 231);
     border: none;
     color: white;
@@ -575,7 +588,7 @@ footer {
     margin-bottom: 5px;
     display: block;
     margin: 0px auto;
-}
+} */
 
 .variedad-talles a {
     text-decoration: none;
@@ -588,7 +601,7 @@ footer {
 
 .btnComprar {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 .social-media {
@@ -622,10 +635,13 @@ footer {
 .fav-container {
     display: flex;
     justify-content: center;
-    background-color: #f9f9f9;
+    background-color: rgb(231, 224, 226);
     border-radius: 50px;
-    height: 50px;
+}
+.favoritos
+{
     width: 50px;
+    height: 50px;
 }
 
 .descripcion {
@@ -636,12 +652,13 @@ footer {
     padding: 20px 0px;
 }
 
+
 @media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
  */
-    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .subMenu, .tarjetasMobile {
-        display: none;
-    }
+    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .menu-desplegable-1, .subMenu, .tarjetasMobile {
+    display: none;
+}
     /*     MUESTRO ELEMENTOS  */
     .wrap-container {
         width: 90%;
@@ -684,7 +701,7 @@ footer {
     .products-list .products-items img {
         width: 100%;
     }
-    .mensaje, .barraBusqueda, .menu-desplegable {
+    .mensaje, .barraBusqueda, .menu-desplegable, .menu-desplegable-1 {
         display: block;
     }
     .mensaje a, .titulo-footer, .cuerpo-footer p {
@@ -714,14 +731,14 @@ footer {
     .btn-whatsapp {
         width: 2%;
     }
-    .menu-desplegable {
+    .menu-desplegable, .menu-desplegable-1 {
         display: flex;
     }
-    .menu-desplegable ul {
+    .menu-desplegable ul, .menu-desplegable-1 ul {
         display: flex;
         margin: auto;
     }
-    .menu-desplegable ul li, .menu-desplegable-titulo ul li {
+    .menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
         padding: 5px 10px;
     }
     #carouselExampleFade {
