@@ -5,12 +5,12 @@ body {
 }
 
 header {
-    background-color: #0a0b44;
+    background-color: #080e44;
 }
 
 .logo {
     width: 20%;
-    border: 1px solid red;
+    /*   border: 1px solid red; */
     margin: auto;
 }
 
@@ -90,7 +90,7 @@ fieldset {
 }
 
 footer {
-    background-color: #0a0b44;
+    background-color: #080e44;
 }
 
 .caja-footer {
@@ -167,7 +167,7 @@ footer {
 
 .campo-publicarProducto input {
     width: 60%;
-    margin:10px;
+    margin: 10px;
 }
 
 .campo-publicarProducto textarea {

@@ -66,8 +66,7 @@ header {
 }
 
 .logo {
-    /*      border: 1px solid blueviolet; 
- */
+   /*  border: 1px solid blueviolet; */
     display: inline-block;
     width: 25%;
     box-sizing: border-box;
@@ -76,45 +75,6 @@ header {
 .logo img {
     width: 100%;
 }
-
-/* ANIMACIÓN LOGO */
-
-@-webkit-keyframes hvr-pulse-shrink {
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-@keyframes hvr-pulse-shrink {
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-.logo {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.logo:hover, .logo:focus, .logo:active {
-    -webkit-animation-name: hvr-pulse-shrink;
-    animation-name: hvr-pulse-shrink;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-/* ------------------------- */
 
 .contenedor-der {
     display: flex;
@@ -208,197 +168,83 @@ header {
     z-index: 999;
 }
 
-/* SLOGAN */
+/*LISTADO DE PRODUCTOS */
 
-.slogan {
-    color: black;
-    text-align: center;
-    font-style: italic;
+.wrap-container {
     width: 100%;
-    background-color: #cdcdcf;
+    margin: auto;
 }
 
-.slogan hr {
-    width: 90%;
-    height: 2%;
-    margin: 2px auto;
-}
-
-.slogan h1 {
-    margin: 0;
-    padding: 25px;
+.wrap-container h1 {
     color: black;
-    font-size: 20px;
-}
-
-/* CARRUSEL */
-
-.container-carousel {
-    background-image: url(../imgs/white3.jpg);
-    background-repeat: round;
-}
-
-/* PROMOCIONES */
-
-.promociones {
-    text-align: center;
-    padding: 15px 0;
-}
-
-.promociones h1 {
-    margin: 20px;
-}
-
-/* LISTA DE CARTAS
- */
-
-.container {
-    margin-top: 110px !important;
-    border: 1px solid blue;
-}
-
-.card {
-    border: none;
-    outline: none;
-    background-color: white !important;
-    border-radius: 20px;
-    transition: transform .3s;
-}
-
-.card:hover {
-    transform: translateY(-15px);
-    transition: transform .3s;
-}
-
-.text1 {
-    font-size: 13px;
-    color: black;
-}
-
-.info {
-    line-height: 17px;
-}
-
-.star {
-    font-size: 25px !important;
-    color: yellow;
-}
-
-.cost span {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.boton {
-    background-color: black;
-}
-
-.card:hover {
-    opacity: .8;
-    cursor: pointer;
-}
-
-.promociones button {
-    margin: 10px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-.promociones button:hover {
-    background-color: black;
-    color: white;
-}
-
-/* BANNER */
-
-.banner {
-    background-color: #ff4a4f;
-    color: white;
-    text-align: center;
-}
-
-.banner h1 {
-    padding: 15px;
-    font-weight: bolder;
-}
-
-.banner p {
-    box-sizing: border-box;
-    font-size: 20px;
-    margin: 0;
-    padding: 5px;
-}
-
-.banner button {
-    margin: 15px;
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px;
-}
-
-.banner button:hover {
-    background-color: black;
-    color: white;
-}
-
-/* PRODUCTOS */
-
-.container-productos {
-    padding: 15px;
-    background-color: #cdcdcf;
-    text-align: center;
-}
-
-.container-productos h1 {
-    color: black;
-    padding: 15px;
-}
-
-.productos {
+    font-weight: 400;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
 }
 
-.producto {
-    width: 30%;
-    margin: 10px auto;
-    padding: 3%;
-    border: 2px solid black;
-    background-color: rgb(192, 191, 191);
-    cursor: pointer;
-}
-
-.producto:hover {
-    -webkit-box-shadow: 5px 7px 7px 8px rgba(0, 0, 0, 0.72);
-    box-shadow: 5px 7px 7px 8px rgba(0, 0, 0, 0.72);
-}
-
-.producto img {
+.wrap-container h1::after {
+    content: '';
     width: 100%;
+    height: 1px;
+    background: grey;
+    margin: 20px 0px;
 }
 
-.producto p {
-    font-size: 20px;
+.category-list {
     width: 100%;
-    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px 10px;
+    color: #f9f9f9;
+}
+
+.category-list h5 {
+    color: black;
+    text-decoration: underline;
+}
+
+.category-list .category-items {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.cat {
+    margin: 1% 10%;
+}
+
+.scroll {
+    height: 100px;
+    overflow-y: scroll;
+    width: 80%;
+}
+
+.category-rama {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.products-list {
     text-align: center;
 }
 
-.container-productos button {
-    margin: 15px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border: 1px solid black;
+.products-list img {
+    width: 85%;
+    display: block;
+    margin: auto;
 }
 
-.container-productos button a {
+.products-items a {
     text-decoration: none;
+    font-size: 20px;
     color: black;
 }
 
@@ -495,7 +341,50 @@ footer {
     .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .menu-desplegable-1, .subMenu, .tarjetasMobile {
         display: none;
     }
+
     /*     MUESTRO ELEMENTOS  */
+    .wrap-container {
+        width: 90%;
+        margin: auto;
+    }
+    .store-wrapper {
+        display: flex;
+        flex-direction: grow;
+    }
+    .category-list {
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        background-color: white;
+    }
+    .category-list .category-items {
+        color: black;
+    }
+    hr {
+        margin: 1rem 0;
+        color: black !important;
+        background-color: currentColor;
+        border: 0;
+        opacity: .25;
+    }
+    .category-rama {
+        color: black;
+    }
+    .products-list {
+        width: 82%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+    .products-list .products-items {
+        width: 22%;
+        background: white;
+        margin-left: 3%;
+        cursor: pointer;
+    }
+    .products-list .products-items img {
+        width: 100%;
+    }
     .mensaje, .barraBusqueda, .menu-desplegable, .menu-desplegable-1 {
         display: block;
     }
@@ -536,23 +425,6 @@ footer {
     .menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
         padding: 5px 10px;
     }
-    #carouselExampleFade {
-        width: 100%;
-    }
-    .banner p {
-        font-size: 15px;
-    }
-    .producto {
-        padding: 1%;
-        width: 14%;
-        margin: 10px;
-    }
-    .producto p {
-        font-size: 15px;
-    }
-    container-productos button {
-        padding: 1%;
-    }
     .container-footer {
         display: flex;
         flex-wrap: wrap;
@@ -570,5 +442,9 @@ footer {
     }
     .cuerpo-footer p {
         font-size: 15px;
+    }
+    .contenedor-principal-header {
+        max-width: 1200px;
+        margin: auto;
     }
 }
