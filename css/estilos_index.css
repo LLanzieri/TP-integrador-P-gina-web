@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #080e44;
+    background-color: #0a0b44;
     padding: 5px 0;
     flex-wrap: wrap;
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .hamburger {
-    background-color: #080e44;
+    background-color: #0a0b44;
     border: 1px solid yellow;
     width: 15%;
     box-sizing: border-box;
@@ -125,7 +125,7 @@ header {
 
 .inicioSesion {
     border: 1px solid orange;
-    background-color: #080e44;
+    background-color: #0a0b44;
     box-sizing: border-box;
     width: 30%;
 }
@@ -135,7 +135,7 @@ header {
 }
 
 .busqueda {
-    background-color: #080e44;
+    background-color: #0a0b44;
     border: 1px solid red;
     box-sizing: border-box;
     width: 30%;
@@ -146,7 +146,7 @@ header {
 }
 
 .carrito {
-    background-color: #080e44;
+    background-color: #0a0b44;
     border: 1px solid green;
     box-sizing: border-box;
     width: 30%;
@@ -432,7 +432,7 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: #080e44;
+    background-color: #0a0b44;
 }
 
 .caja-footer {
