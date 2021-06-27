@@ -32,7 +32,7 @@ header {
 }
 
 .mensaje a {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     color: white;
     text-decoration: none;
     font-size: 15px;
@@ -56,7 +56,7 @@ header {
 
 .hamburger {
     background-color: #0a0b44;
-    border: 1px solid yellow;
+   /*  border: 1px solid yellow; */
     width: 15%;
     box-sizing: border-box;
 }
@@ -66,7 +66,7 @@ header {
 }
 
 .logo {
-   /*  border: 1px solid blueviolet; */
+    /*  border: 1px solid blueviolet; */
     display: inline-block;
     width: 25%;
     box-sizing: border-box;
@@ -76,15 +76,54 @@ header {
     width: 100%;
 }
 
+/* ANIMACIÓN LOGO */
+
+@-webkit-keyframes hvr-pulse-shrink {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes hvr-pulse-shrink {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.logo:hover, .logo:focus, .logo:active {
+    -webkit-animation-name: hvr-pulse-shrink;
+    animation-name: hvr-pulse-shrink;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/* ------------------------- */
+
 .contenedor-der {
     display: flex;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     width: 130px;
     justify-content: space-between;
 }
 
 .inicioSesion {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     background-color: #0a0b44;
     box-sizing: border-box;
     width: 30%;
@@ -96,7 +135,7 @@ header {
 
 .busqueda {
     background-color: #0a0b44;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     width: 30%;
 }
@@ -107,7 +146,7 @@ header {
 
 .carrito {
     background-color: #0a0b44;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     box-sizing: border-box;
     width: 30%;
 }
@@ -292,7 +331,17 @@ footer {
     text-decoration: underline;
     font-style: italic;
     font-size: 20px;
-    padding: 10px 0px;
+    padding: 5px 0px;
+    margin: 5px;
+}
+
+.logo-footer {
+    width: 125px;
+    margin: 0px auto;
+}
+
+.logo-footer img {
+    width: 100%;
 }
 
 .cuerpo-footer p {
@@ -300,13 +349,16 @@ footer {
     color: white;
     padding: 10px;
     font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .redes-sociales {
     width: 100%;
     display: flex;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     justify-content: center;
+    margin: 5px;
 }
 
 .redes-sociales button {
@@ -322,6 +374,10 @@ footer {
 
 .alFinal {
     margin: auto;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Asap', sans-serif;
 }
 
 .mapa iframe {
@@ -331,7 +387,38 @@ footer {
 
 .fin-footer {
     color: white;
+    font-size: 13px;
+    padding: 1px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.parrafo-footer {
+    font-family: 'Asap', sans-serif;
+    color: white;
     padding: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.parrafo-footer img {
+    width: 13%;
+    display: block;
+    margin: 0px auto;
+}
+
+.parrafo-footer p {
+    margin: 1px;
+    padding: 10px;
+}
+
+.container-footer hr {
+    color: white;
+    width: 95%;
+    margin: 5px auto;
+    height: 2%;
 }
 
 @media (min-width: 745px) {
@@ -347,7 +434,7 @@ footer {
     }
     hr {
         margin: 1rem 0;
-        color: black !important;
+        color: black /* !important */;
         background-color: currentColor;
         border: 0;
         opacity: .25;
@@ -392,6 +479,16 @@ footer {
     .menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
         padding: 5px 10px;
     }
+    .contenedor-principal-detalle{ /*,  .contenedor-principal-footer,  .contenedor-principal-header*/ 
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-container {
+        display: flex;
+    }
+    .caja-carusel, .contenedor-detalle {
+        width: 50%;
+    }
     .container-footer {
         display: flex;
         flex-wrap: wrap;
@@ -399,7 +496,7 @@ footer {
     }
     .caja-footer {
         width: 33%;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
     }
     .mapa iframe {
         width: 100%;
@@ -410,14 +507,10 @@ footer {
     .cuerpo-footer p {
         font-size: 15px;
     }
-    .contenedor-principal-detalle, .contenedor-principal-footer, .contenedor-principal-header {
-        max-width: 1200px;
-        margin: auto;
+    .alFinal {
+        font-size: 15px;
     }
-    .main-container {
-        display: flex;
-    }
-    .caja-carusel, .contenedor-detalle {
-        width: 50%;
+    .parrafo-footer p {
+        font-size: 15px;
     }
 }
