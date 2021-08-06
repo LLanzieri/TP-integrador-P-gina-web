@@ -1,9 +1,11 @@
 
 # Trabajo práctico de la carrera de desarrollo full stack
 
-***Página web creada desde cero .***
+***Página web creada desde cero.***
 
-Nuestra página web se trata de un sitio ecommerce que fue desarrollado aplicando los conocimientos aprendidos a lo largo de los diferentes módulos vistos en clase, utilizando las siguientes tecnologías:
+Nuestra página web se trata de un sitio ecommerce que fue desarrollado aplicando los conocimientos aprendidos a lo largo de los diferentes temas vistos en clase, utilizando las puntos claves:
 
-- *HTML, CSS* para la primer parte de maquetación web.
-- *JavaScript* para darle dinamismo a la página.
+- Diseño responsive mediante la aplicación de media queries (diseño Mobile First).
+- *HTML semántico, CSS, Flexbox* para la maquetación web.
+- Utilización de Bootstrap para el carrousel de fotos.
+- Font Awesome
