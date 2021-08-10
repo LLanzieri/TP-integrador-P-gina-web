@@ -18,7 +18,7 @@
     <!-- CUPON -->
 
     <div class="cupon">
-        <p>ACA VA UN ANUNCIO COMO PARA UN DESCUENTO O ALGUN AVISO</p>
+        <p>¡PUBLICÁ GRATIS EN NUESTRA PÁGINA!</p>
     </div>
 
     <!-- COMIENZO CABECERA -->
@@ -30,7 +30,7 @@
             <a href="iniciar_sesion.html">Iniciar Sesión</a>
         </div>
         <div class="top-menu">
-            <button class="hamburger">
+            <button class="hamburger" id="hambIcon">
                 <img src="./imgs/hamb2.png" alt="hamburger icon">
             </button>
             <div class="logo">
@@ -42,6 +42,8 @@
             <div class="barraBusqueda">
                 <input type="text" id="barraBusqueda" name="barraBusqueda" placeholder=" 🔍 ¿Qué estás buscando?">
             </div>
+
+            <!-- ------------------------------------------------------------ -->
 
             <div class="contenedor-der">
                 <button class="inicioSesion">
@@ -56,78 +58,102 @@
             </div>
         </div>
 
+        <div class="barraBusquedaMobile">
+            <input type="text" id="barraBusquedaMobile" name="barraBusquedaMobile"
+                placeholder=" 🔍 ¿Qué estás buscando?">
+        </div>
+
         <!--   MENU DESPLEGABLE  -->
 
-        <div class="menu-desplegable">
+        <div class="menu-desplegable" id="menuDesple">
             <ul>
                 <div class="vista-mobile">
                     <li> <a href="iniciar_sesion.html">Iniciar Sesión</a> </li>
                     <li> <a href="crear_cuenta.html">Crear Cuenta</a> </li>
                 </div>
-                <li> <a href="publicar.html">Publicar</a> </li>
-                <li> <a href="#">Categorías +</a> </li>
-                <div class="subMenu">
-                    <ul>
-                        <li><a href="#">Mujer ➠</a></li>
-                        <div class="subMenuSecundario">
-                            <ul>
-                                <li><a href="#">Indumentaria</a></li>
-                                <li><a href="#">Calzado</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                                <li><a href="./listado-producto.html">Ver todo</a></li>
-                            </ul>
-                        </div>
-                        <li><a href="#">Hombre ➠</a></li>
-                        <div class="subMenuSecundario">
-                            <ul>
-                                <li><a href="#">Indumentaria</a></li>
-                                <li><a href="#">Calzado</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                                <li><a href="./listado-producto.html">Ver todo</a></li>
-                            </ul>
-                        </div>
-                        <li><a href="#">Niños ➠</a></li>
-                        <div class="subMenuSecundario">
-                            <ul>
-                                <li><a href="#">Indumentaria</a></li>
-                                <li><a href="#">Calzado</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                                <li><a href="./listado-producto.html">Ver todo</a></li>
-                            </ul>
-                        </div>
-                        <li><a href="#">Sin género ➠</a></li>
-                        <div class="subMenuSecundario">
-                            <ul>
-                                <li><a href="#">Indumentaria</a></li>
-                                <li><a href="#">Calzado</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                                <li><a href="./listado-producto.html">Ver todo</a></li>
-                            </ul>
-                        </div>
-                        <li><a href="./listado-producto.html">Ver todo</a></li>
-                    </ul>
+                <div class="container-submenus">
+                    <li> <a href="publicar.html">Publicar</a> </li>
                 </div>
-                <li> <a href="#">Deporte +</a> </li>
-                <div class="subMenu">
-                    <ul>
-                        <li><a href="#">Fútbol</a></li>
-                        <li><a href="#">Tenis</a></li>
-                        <li><a href="#">Running</a></li>
-                        <li><a href="./listado-producto.html">Ver todo</a></li>
-                    </ul>
+                <div class="container-submenus">
+                    <li> <a href="#" id="btnCategorias">Categorías <i class="fa fa-chevron-circle-down"></i> </a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#" id="btnMujer">Mujer <i class="fa fa-caret-down"></i></a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#" class="opcion">Indumentaria</a></li>
+                                    <li><a href="#" class="opcion">Calzado</a></li>
+                                    <li><a href="#" class="opcion">Accesorios</a></li>
+                                    <li><a href="./listado-producto.html" class="opcion">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#" id="btnHombre">Hombre <i class="fa fa-caret-down"></i></a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#" class="opcion">Indumentaria</a></li>
+                                    <li><a href="#" class="opcion">Calzado</a></li>
+                                    <li><a href="#" class="opcion">Accesorios</a></li>
+                                    <li><a href="./listado-producto.html" class="opcion">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#" id="btnNinios">Niños <i class="fa fa-caret-down"></i></a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#" class="opcion">Indumentaria</a></li>
+                                    <li><a href="#" class="opcion">Calzado</a></li>
+                                    <li><a href="#" class="opcion">Accesorios</a></li>
+                                    <li><a href="./listado-producto.html" class="opcion">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#" id="btnSinGenero">Sin género <i class="fa fa-caret-down"></i></a></li>
+                            <div class="subMenuSecundario">
+                                <ul>
+                                    <li><a href="#" class="opcion">Indumentaria</a></li>
+                                    <li><a href="#" class="opcion">Calzado</a></li>
+                                    <li><a href="#" class="opcion">Accesorios</a></li>
+                                    <li><a href="./listado-producto.html" class="opcion">Ver todo</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="./listado-producto.html">Ver todo</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <li> <a href="#">Marcas +</a> </li>
-                <div class="subMenu">
-                    <ul>
-                        <li><a href="#">Nike</a></li>
-                        <li><a href="#">Adidas</a></li>
-                        <li><a href="#">Reebok</a></li>
-                        <li><a href="./listado-producto.html">Ver todo</a></li>
-                    </ul>
+                <div class="container-submenus">
+                    <li> <a href="#" id="btnDeporte">Deporte <i class="fa fa-chevron-circle-down"></i></a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Fútbol</a></li>
+                            <li><a href="#">Tenis</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Natación</a></li>
+                            <li><a href="./listado-producto.html">Ver todo</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <li> <a href="#">Accesorios</a> </li>
-                <li> <a href="#">Ofertas</a> </li>
-                <li> <a href="contacto.html">Contactanos</a> </li>
+                <div class="container-submenus">
+                    <li> <a href="#" id="btnMarcas">Marcas <i class="fa fa-chevron-circle-down"></i></a> </li>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Adidas</a></li>
+                            <li><a href="#">Reebok</a></li>
+                            <li><a href="#">Puma</a></li>
+                            <li><a href="./listado-producto.html">Ver todo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-submenus">
+                    <li> <a href="#">Accesorios</a> </li>
+                </div>
+
+                <div class="container-submenus">
+                    <li> <a href="#">Ofertas</a> </li>
+                </div>
+
+                <div class="container-submenus">
+                    <li> <a href="contacto.html">Contactanos</a> </li>
+                </div>
+
             </ul>
         </div>
     </header>
@@ -361,7 +387,10 @@
     <div class="newsletter">
         <h2>SUSCRIBITE A NUESTRO NEWSLETTER</h2>
         <input type="email" id="email" name="email" placeholder="¡ Ingresa tu email ✉ !">
+        <button>SUSCRIBIRSE</button>
     </div>
+
+
 
     <!-- FOOTER -->
 
@@ -450,7 +479,7 @@
                 <p>Copyright © Trabajo práctico integrador 2021.</p>
             </div>
         </div>
-        
+
     </footer>
 
     <div class="btn-whatsapp">
@@ -459,6 +488,7 @@
         </a>
     </div>
 
+    <script src="./javascript_index.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 

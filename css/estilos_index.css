@@ -3,6 +3,14 @@ body {
     margin: 0;
 }
 
+.menu-desplegable, .subMenu, .subMenuSecundario, .barraBusquedaMobile {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 header {
     background-color: #0a0b44;
     padding: 5px 0;
@@ -114,7 +122,9 @@ header {
     animation-direction: alternate;
 }
 
-/* ------------------------- */
+/* ---------------------------------------------------------- */
+
+/* MENU DESPLEGABLE */
 
 .contenedor-der {
     display: flex;
@@ -156,6 +166,17 @@ header {
     width: 100%;
 }
 
+.barraBusquedaMobile {
+    width: 100%;
+    margin: 10px 3px;
+}
+
+.barraBusquedaMobile input {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
 .menu-desplegable ul {
     margin: 0;
     padding: 0;
@@ -175,11 +196,15 @@ header {
 }
 
 .subMenu ul li {
-    background-color: #585858
+    background-color: #383838;
 }
 
 .subMenu ul li a {
     margin: 3%;
+}
+
+.subMenuSecundario ul li {
+    background-color: #585858;
 }
 
 .subMenuSecundario ul li a {
@@ -393,9 +418,14 @@ header {
     border: 1px solid black;
 }
 
+.container-productos button:hover {
+    background-color: black;
+    color: white;
+}
+
 .container-productos button a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 /* NEWSLETTER */
@@ -403,6 +433,7 @@ header {
 .newsletter {
     padding: 20px;
     background-image: url(../imgs/the-background-292720_1280.png);
+    text-align: center;
 }
 
 .newsletter h2 {
@@ -420,8 +451,21 @@ header {
     display: block;
     margin: auto;
     padding: 10px;
-    width: 50%;
+    width: 75%;
     text-align: center;
+}
+
+.newsletter button {
+    margin: 25px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.newsletter button:hover {
+    background-color: black;
+    color: white;
 }
 
 /* FOOTER */
@@ -435,7 +479,7 @@ footer {
     flex-direction: column;
 }
 
-.titulo-footer{
+.titulo-footer {
     font-family: 'Asap', sans-serif;
     color: white;
     text-align: center;
@@ -505,7 +549,7 @@ footer {
     text-align: center;
 }
 
-.parrafo-footer{
+.parrafo-footer {
     font-family: 'Asap', sans-serif;
     color: white;
     padding: 5px;
@@ -514,18 +558,18 @@ footer {
     text-align: center;
 }
 
-.parrafo-footer img{
+.parrafo-footer img {
     width: 13%;
     display: block;
     margin: 0px auto;
 }
 
-.parrafo-footer p{
+.parrafo-footer p {
     margin: 1px;
     padding: 10px;
 }
 
-.container-footer hr{
+.container-footer hr {
     color: white;
     width: 95%;
     margin: 5px auto;
@@ -535,7 +579,7 @@ footer {
 @media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
  */
-    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .menu-desplegable-1, .subMenu, .tarjetasMobile {
+    .hamburger, .busqueda, .vista-mobile, .tarjetasMobile, .barraBusquedaMobile {
         display: none;
     }
     /*     MUESTRO ELEMENTOS  */
@@ -569,15 +613,44 @@ footer {
     .btn-whatsapp {
         width: 2%;
     }
-    .menu-desplegable, .menu-desplegable-1 {
+    .menu-desplegable {
         display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
     }
-    .menu-desplegable ul, .menu-desplegable-1 ul {
+    .menu-desplegable ul {
         display: flex;
         margin: auto;
+        justify-content: space-evenly;
+        width: 90%;
     }
-    .menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
+    .menu-desplegable ul li {
         padding: 5px 10px;
+        margin: 3px;
+        text-align: center;
+    }
+    .container-submenus {
+        position: relative;
+        display: inline-block;
+        width: 13%;
+    }
+    .subMenu {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    .subMenu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subMenuSecundario ul li a {
+        margin: 5%;
+    }
+    .subMenu ul li a {
+        margin: 0%;
     }
     #carouselExampleFade {
         width: 100%;
@@ -593,7 +666,7 @@ footer {
     .producto p {
         font-size: 15px;
     }
-    container-productos button {
+    .container-productos button {
         padding: 1%;
     }
     .container-footer {
@@ -603,7 +676,7 @@ footer {
     }
     .caja-footer {
         width: 33%;
-       /*  border: 1px solid white; */
+        /*  border: 1px solid white; */
     }
     .mapa iframe {
         width: 100%;
@@ -614,12 +687,10 @@ footer {
     .cuerpo-footer p {
         font-size: 15px;
     }
-
-    .alFinal{
+    .alFinal {
         font-size: 15px;
     }
-
-    .parrafo-footer p{
+    .parrafo-footer p {
         font-size: 15px;
     }
 }
