@@ -15,6 +15,7 @@ Nuestra página web se trata de un sitio ecommerce que fue desarrollado aplicand
 
 - Diseño responsive mediante la aplicación de media queries (diseño Mobile First).
 - *HTML semántico, CSS, Flexbox* para la maquetación web.
+- JavaScript para dinamismo de menú de navegación.
 - Utilización de Bootstrap para el carrousel de fotos.
 - Font Awesome.  
 <p><img src="https://www.drupal.org/files/project-images/font_awesome_logo.png"/width=55> <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg"/width=55></p>
