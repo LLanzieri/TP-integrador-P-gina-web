@@ -3,6 +3,19 @@ body {
     margin: 0;
 }
 
+/* NECESARIOS PARA EL MANEJO DEL MENU CON JAVASCRIPT Y BARRA DE BUSQUEDA
+ */
+
+.menu-desplegable, .subMenu, .subMenuSecundario, .barraBusquedaMobile {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* --------------------------------------------------- */
+
 header {
     background-color: #0a0b44;
     padding: 5px 0;
@@ -32,7 +45,7 @@ header {
 }
 
 .mensaje a {
-   /*  border: 1px solid salmon; */
+    /*  border: 1px solid salmon; */
     color: white;
     text-decoration: none;
     font-size: 15px;
@@ -56,7 +69,7 @@ header {
 
 .hamburger {
     background-color: #0a0b44;
-   /*  border: 1px solid yellow; */
+    /*  border: 1px solid yellow; */
     width: 15%;
     box-sizing: border-box;
 }
@@ -115,9 +128,11 @@ header {
 
 /* ------------------------- */
 
+/* MENU DESPLEGABLE */
+
 .contenedor-der {
     display: flex;
-   /*  border: 1px solid greenyellow; */
+    /*  border: 1px solid greenyellow; */
     width: 130px;
     justify-content: space-between;
 }
@@ -155,30 +170,59 @@ header {
     width: 100%;
 }
 
-.menu-desplegable ul, .menu-desplegable-titulo ul {
+.barraBusquedaMobile {
+    width: 100%;
+    margin: 10px 3px;
+}
+
+.barraBusquedaMobile input {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.barraBusquedaMobile button {
+    display: block;
+    margin: 15px auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.barraBusquedaMobile button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-desplegable ul {
     margin: 0;
     padding: 0;
 }
 
-.menu-desplegable ul li, .menu-desplegable-titulo ul li {
+.menu-desplegable ul li {
     list-style: none;
     background-color: black;
     margin: 5px;
     padding: 5px 10px;
 }
 
-.menu-desplegable ul li a, .menu-desplegable-titulo ul li a {
+.menu-desplegable ul li a {
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
 
 .subMenu ul li {
-    background-color: #585858
+    background-color: #383838;
 }
 
 .subMenu ul li a {
     margin: 3%;
+}
+
+.subMenuSecundario ul li {
+    background-color: #585858;
 }
 
 .subMenuSecundario ul li a {
@@ -286,9 +330,9 @@ header {
 /* NEWSLETTER */
 
 .newsletter {
-    background-color: brown;
     padding: 20px;
     background-image: url(../imgs/the-background-292720_1280.png);
+    text-align: center;
 }
 
 .newsletter h2 {
@@ -306,8 +350,21 @@ header {
     display: block;
     margin: auto;
     padding: 10px;
-    width: 50%;
+    width: 75%;
     text-align: center;
+}
+
+.newsletter button {
+    margin: 25px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.newsletter button:hover {
+    background-color: black;
+    color: white;
 }
 
 /* FOOTER */
@@ -421,13 +478,12 @@ footer {
 @media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
  */
-    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .subMenu, .tarjetasMobile {
+    .hamburger, .busqueda, .vista-mobile, .barraBusquedaMobile {
         display: none;
     }
     /*     MUESTRO ELEMENTOS  */
-    .contenedor-principal-header {
-        max-width: 1200px;
-        margin: auto;
+    .mensaje, .barraBusqueda, .menu-desplegable {
+        display: block;
     }
     .wrap-container {
         width: 90%;
@@ -472,17 +528,30 @@ footer {
     .products-list .products-items img {
         width: 100%;
     }
-    .mensaje, .barraBusqueda, .menu-desplegable {
-        display: block;
-    }
     .mensaje a, .titulo-footer, .cuerpo-footer p {
         font-size: 15px;
+        margin: 5px;
     }
     .barraBusqueda {
         width: 60%;
+        display: flex;
     }
     .barraBusqueda input {
-        width: 100%;
+        width: 80%;
+        height: min-content;
+        margin: auto;
+    }
+    .barraBusqueda button {
+        display: block;
+        margin: 15px auto;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .barraBusqueda button a {
+        text-decoration: none;
+        color: inherit;
     }
     .top-menu {
         justify-content: space-around;
@@ -504,13 +573,42 @@ footer {
     }
     .menu-desplegable {
         display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
     }
     .menu-desplegable ul {
         display: flex;
         margin: auto;
+        justify-content: space-evenly;
+        width: 90%;
     }
-    .menu-desplegable ul li, .menu-desplegable-titulo ul li {
+    .menu-desplegable ul li {
         padding: 5px 10px;
+        margin: 3px;
+        text-align: center;
+    }
+    .container-submenus {
+        position: relative;
+        display: inline-block;
+        width: 13%;
+    }
+    .subMenu {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    .subMenu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subMenuSecundario ul li a {
+        margin: 5%;
+    }
+    .subMenu ul li a {
+        margin: 0%;
     }
     .container-footer {
         display: flex;

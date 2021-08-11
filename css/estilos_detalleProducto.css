@@ -3,6 +3,19 @@ body {
     margin: 0;
 }
 
+/* NECESARIOS PARA EL MANEJO DEL MENU CON JAVASCRIPT Y BARRA DE BUSQUEDA
+ */
+
+.menu-desplegable, .subMenu, .subMenuSecundario, .barraBusquedaMobile {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* --------------------------------------------------- */
+
 header {
     background-color: #0a0b44;
     padding: 5px 0;
@@ -56,7 +69,7 @@ header {
 
 .hamburger {
     background-color: #0a0b44;
-   /*  border: 1px solid yellow; */
+    /*  border: 1px solid yellow; */
     width: 15%;
     box-sizing: border-box;
 }
@@ -115,6 +128,8 @@ header {
 
 /* ------------------------- */
 
+/* MENU DESPLEGABLE */
+
 .contenedor-der {
     display: flex;
     /* border: 1px solid greenyellow; */
@@ -155,34 +170,59 @@ header {
     width: 100%;
 }
 
-.menu-desplegable-1 {
-    display: none;
+.barraBusquedaMobile {
+    width: 100%;
+    margin: 10px 3px;
 }
 
-.menu-desplegable ul, .menu-desplegable-1 ul, .menu-desplegable-titulo ul {
+.barraBusquedaMobile input {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.barraBusquedaMobile button {
+    display: block;
+    margin: 15px auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.barraBusquedaMobile button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-desplegable ul {
     margin: 0;
     padding: 0;
 }
 
-.menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
+.menu-desplegable ul li {
     list-style: none;
     background-color: black;
     margin: 5px;
     padding: 5px 10px;
 }
 
-.menu-desplegable ul li a, .menu-desplegable-titulo ul li a, .menu-desplegable-1 ul li a {
+.menu-desplegable ul li a {
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
 
 .subMenu ul li {
-    background-color: #585858
+    background-color: #383838;
 }
 
 .subMenu ul li a {
     margin: 3%;
+}
+
+.subMenuSecundario ul li {
+    background-color: #585858;
 }
 
 .subMenuSecundario ul li a {
@@ -424,7 +464,7 @@ footer {
 @media (min-width: 745px) {
     /*     ESCONDO ELEMENTOS
  */
-    .hamburger, .busqueda, .vista-mobile, .menu-desplegable, .menu-desplegable-1, .subMenu, .tarjetasMobile {
+    .hamburger, .busqueda, .vista-mobile, .barraBusquedaMobile {
         display: none;
     }
     /*     MUESTRO ELEMENTOS  */
@@ -434,22 +474,39 @@ footer {
     }
     hr {
         margin: 1rem 0;
-        color: black /* !important */;
+        color: black/* !important */
+        ;
         background-color: currentColor;
         border: 0;
         opacity: .25;
     }
-    .mensaje, .barraBusqueda, .menu-desplegable, .menu-desplegable-1 {
+    .mensaje, .barraBusqueda, .menu-desplegable {
         display: block;
     }
     .mensaje a, .titulo-footer, .cuerpo-footer p {
         font-size: 15px;
+        margin: 5px;
     }
     .barraBusqueda {
         width: 60%;
+        display: flex;
     }
     .barraBusqueda input {
-        width: 100%;
+        width: 80%;
+        height: min-content;
+        margin: auto;
+    }
+    .barraBusqueda button {
+        display: block;
+        margin: 15px auto;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .barraBusqueda button a {
+        text-decoration: none;
+        color: inherit;
     }
     .top-menu {
         justify-content: space-around;
@@ -469,17 +526,47 @@ footer {
     .btn-whatsapp {
         width: 2%;
     }
-    .menu-desplegable, .menu-desplegable-1 {
+    .menu-desplegable {
         display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
     }
-    .menu-desplegable ul, .menu-desplegable-1 ul {
+    .menu-desplegable ul {
         display: flex;
         margin: auto;
+        justify-content: space-evenly;
+        width: 90%;
     }
-    .menu-desplegable ul li, .menu-desplegable-titulo ul li, .menu-desplegable-1 ul li {
+    .menu-desplegable ul li {
         padding: 5px 10px;
+        margin: 3px;
+        text-align: center;
     }
-    .contenedor-principal-detalle{ /*,  .contenedor-principal-footer,  .contenedor-principal-header*/ 
+    .container-submenus {
+        position: relative;
+        display: inline-block;
+        width: 13%;
+    }
+    .subMenu {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    .subMenu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subMenuSecundario ul li a {
+        margin: 5%;
+    }
+    .subMenu ul li a {
+        margin: 0%;
+    }
+    .contenedor-principal-detalle {
+        /*,  .contenedor-principal-footer,  .contenedor-principal-header*/
         max-width: 1200px;
         margin: auto;
     }
